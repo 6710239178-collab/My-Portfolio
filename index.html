@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Portfolio - ศิรวิชญ์ วันบุญมา</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body{
+    margin:0;
+    font-family:'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color:#fff;
+}
+
+/* grid effect */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0,255,255,0.05),
+        rgba(0,255,255,0.05) 1px,
+        transparent 1px,
+        transparent 40px
+    );
+    pointer-events:none;
+}
+
+/* ===== Banner รูป ===== */
+.banner{
+    width:100%;
+    height:396px; /* ตามขนาดรูปเอิร์ธ */
+    object-fit:cover;
+    display:block;
+    box-shadow:0 10px 40px rgba(0,255,255,0.3);
+    border-bottom:1px solid rgba(0,255,255,0.4);
+}
+
+/* navbar */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(0,255,255,0.3);
+}
+
+nav a{
+    color:#00ffff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#fff;
+    text-shadow:0 0 10px #00ffff;
+}
+
+/* main section */
+.hero{
+    padding:60px 20px;
+    text-align:center;
+}
+
+h1{
+    font-size:42px;
+    text-shadow:0 0 20px #00ffff;
+}
+
+.subtitle{
+    margin-top:10px;
+    font-size:18px;
+    color:#00ffff;
+}
+
+/* buttons */
+.btn-group{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    border-radius:30px;
+    background:linear-gradient(90deg,#00ffff,#0088ff);
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00ffff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔥 รูป Banner -->
+<img src="img/welcome.png" alt="banner" class="banner">
+
+<!-- 🔥 เมนู -->
+<nav>
+<a href="index.html">หน้าแรก</a>
+<a href="about.html">ข้อมูลส่วนตัว</a>
+<a href="portfolio.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+</nav>
+
+<!-- 🔥 เนื้อหา -->
+<div class="hero">
+    <h1>Sirawich Website</h1>
+    <div class="subtitle">
+        Sirawich Wanboonma | DB-GP 2/1
+    </div>
+
+    <div class="btn-group">
+        <a href="about.html" class="btn">PROFILE</a>
+        <a href="portfolio.html" class="btn">PROJECTS</a>
+        <a href="contact.html" class="btn">CONTACT</a>
+    </div>
+</div>
+
+</body>
+</html>

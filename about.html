@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - ศิรวิชญ์ วันบุญมา</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+body{
+    margin:0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* เอฟเฟกต์เส้นเรืองแสง */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0,255,255,0.05),
+        rgba(0,255,255,0.05) 1px,
+        transparent 1px,
+        transparent 40px
+    );
+    pointer-events:none;
+}
+
+/* เมนู */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:20px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid rgba(0,255,255,0.3);
+}
+
+nav a{
+    color:#00ffff;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffffff;
+    text-shadow:0 0 10px #00ffff;
+}
+
+/* กล่องหลัก */
+.container{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.card{
+    max-width:800px;
+    margin:auto;
+    background:rgba(0,0,0,0.7);
+    border:1px solid rgba(0,255,255,0.4);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 0 30px rgba(0,255,255,0.3);
+    backdrop-filter: blur(15px);
+}
+
+h1{
+    font-size:28px;
+    margin-bottom:20px;
+    text-shadow:0 0 15px #00ffff;
+}
+
+h2{
+    color:#00ffff;
+}
+
+h3{
+    margin-top:30px;
+    color:#00ffff;
+}
+
+p{
+    line-height:1.8;
+}
+
+/* ปุ่ม */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 25px;
+    border-radius:30px;
+    background:linear-gradient(90deg,#00ffff,#0088ff);
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    box-shadow:0 0 20px #00ffff;
+    transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">หน้าแรก</a>
+<a href="about.html">ข้อมูลส่วนตัว</a>
+<a href="portfolio.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
+</nav>
+
+<div class="container">
+
+<h1>About Me</h1>
+
+<div class="card">
+
+<h2>ศิรวิชญ์ วันบุญมา</h2>
+<p><strong>ระดับการศึกษา:</strong> ปวช.2 สาขา DB-GP 2/1</p>
+
+<p>
+มีความสนใจด้านสื่อดิจิทัล งานสร้างสรรค์ และการพัฒนาคอนเทนต์ออนไลน์
+เชี่ยวชาญการตัดต่อวิดีโอ ออกแบบกราฟิกด้วย Canva
+และมีความคุ้นเคยกับการใช้งานคอมพิวเตอร์ในระดับสูง
+</p>
+
+<p>
+มุ่งมั่นพัฒนาทักษะด้านโปรดักชันและงานสร้างสรรค์อย่างต่อเนื่อง
+พร้อมเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ
+</p>
+
+<h3>🎯 MISSION TARGET</h3>
+
+<p>
+ตั้งเป้าหมายสู่การทำงานเบื้องหลังในอุตสาหกรรมภาพยนตร์
+ในตำแหน่งทีมงานโปรดักชันหรือทีมงานหลังกล้อง
+</p>
+
+<p>
+หนึ่งในความฝันคือการเดินทางไปชมการแข่งขันฟุตบอลที่สนาม Old Trafford
+</p>
+
+</div>
+
+<a href="index.html" class="btn">⬅ BACK TO HOME</a>
+
+</div>
+
+</body>
+</html>
